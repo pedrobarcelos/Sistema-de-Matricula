@@ -1,5 +1,6 @@
 package com.grupo05.matriculas;
 
 public interface IMenu{
-    public void verMenu();
+    public int verMenu();
+    public void alterarSenha();
 }

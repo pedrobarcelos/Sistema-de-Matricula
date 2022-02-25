@@ -2,9 +2,9 @@ package com.grupo05.matriculas;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class FactoryAlunx extends SecretariaFactory implements ICadastro{
+public class FactoryAlunx extends FactoryPessoa implements ICadastro{
 
-    public Scanner scan = new Scanner(System.in);
+    transient Scanner scan = new Scanner(System.in);
 
     @Override
     public void criarPessoa(){
@@ -18,6 +18,7 @@ public class FactoryAlunx extends SecretariaFactory implements ICadastro{
     public ArrayList<String> fazerCadastro() {
         ArrayList<String> cadastro = new ArrayList<String>(6);
         String nome,codigoPessoa,senha,curso,turno,periodo;
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
         System.out.println("Nome do aluno: ");
         nome = scan.nextLine();
         cadastro.add(nome);

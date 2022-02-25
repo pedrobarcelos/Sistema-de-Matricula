@@ -3,9 +3,9 @@ package com.grupo05.matriculas;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class FactoryProfessorx extends SecretariaFactory implements ICadastro{
+public class FactoryProfessorx extends FactoryPessoa implements ICadastro{
 
-    public Scanner scan = new Scanner(System.in);
+    transient Scanner scan = new Scanner(System.in);
 
     @Override
     public void criarPessoa(){

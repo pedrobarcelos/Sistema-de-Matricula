@@ -1,6 +1,6 @@
 package com.grupo05.matriculas;
 
-public abstract class SecretariaFactory { //
+public abstract class FactoryPessoa { //
 
     protected Pessoa pessoa;
 
