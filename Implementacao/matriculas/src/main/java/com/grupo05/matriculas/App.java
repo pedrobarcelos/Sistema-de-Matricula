@@ -132,7 +132,22 @@ public class App {
                     while (opcaoProfessor != 0) {
                         switch (opcaoProfessor) {
                         case 1:
-                            professor.searchAlunos(DOptativas, DObrigatorias, alunos);
+                            System.out.println(
+                                    "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                            System.out.println("1 - Disciplinas Obrigatorias");
+                            System.out.println("2 - Disciplinas Optativas");
+                            Scanner scan = new Scanner(System.in);
+                            int opcao = scan.nextInt();
+                            switch (opcao) {
+                            case 1:
+                                professor.searchAlunosOBG(DObrigatorias, alunos);
+                                break;
+                            case 2:
+                                professor.searchAlunosOPT(DOptativas, alunos);
+                                break;
+                            default:
+                                break;
+                            }
                             break;
                         }
                         opcaoProfessor = professor.verMenu();

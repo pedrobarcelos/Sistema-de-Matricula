@@ -61,12 +61,32 @@ public class Professorx extends Pessoa implements Serializable {
         }while(novaSenha.equals("OK"));
     }
 
-    public void searchAlunos(ArrayList<DisciplinaOptativa> DOPT, ArrayList<DisciplinaObrigatoria> DOBG, ArrayList<Alunx> alunos){
+    public void searchAlunosOPT(ArrayList<DisciplinaOptativa> DOPT, ArrayList<Alunx> alunos){
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
         System.out.println("Escolha a disciplina: ");
         int count = 0;
         for (DisciplinaOptativa dis : DOPT) {
             System.out.println(count + " Nome: " + dis.nome);
+            count ++;
         }
+        int opcao = scan.nextInt();
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        for (String nome : DOPT.get(opcao).alunosInscritos) {
+            System.out.println("Nome: " + nome);
+        }   
+    }
+    public void searchAlunosOBG(ArrayList<DisciplinaObrigatoria> DOBG, ArrayList<Alunx> alunos){
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        System.out.println("Escolha a disciplina: ");
+        int count = 0;
+        for (DisciplinaObrigatoria dis : DOBG) {
+            System.out.println(count + " Nome: " + dis.nome);
+            count ++;
+        }
+        int opcao = scan.nextInt();
+        System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        for (String nome : DOBG.get(opcao).alunosInscritos) {
+            System.out.println("Nome: " + nome);
+        }   
     }
 }

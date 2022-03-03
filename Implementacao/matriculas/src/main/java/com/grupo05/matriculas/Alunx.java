@@ -71,22 +71,22 @@ public class Alunx extends Pessoa implements Serializable {
 
     public void fazerMatricula(ArrayList<DisciplinaObrigatoria> obrigatorias, ArrayList<DisciplinaOptativa> optativas){
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-        System.out.println("1 - Inscrever-se em uma materia obrigatoria(max 4)");
-        System.out.println("2 - Inscrever-se em uma materia obrigatoria(max 2)");
+        System.out.println("1 - Inscrever-se em uma materia optativa(max 2)");
+        System.out.println("2 - Inscrever-se em uma materia obrigatoria(max 4)");
         int opcao = scan.nextInt();
         DisciplinaOptativa materiaOPT;
         DisciplinaObrigatoria materiaOBG;
         switch(opcao){
             case 1:
                 materiaOPT = listarOptativas(optativas);
-                if(DOptativasInscrito.size() < 4){
-                    for (DisciplinaOptativa disciplinaOptativa : optativas) {
+                if(DOptativasInscrito.size() < 2){
+                    for (DisciplinaOptativa disciplinaOptativa : DOptativasInscrito) {
                         if(disciplinaOptativa.equals(materiaOPT)){
                             System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                             System.out.println("Você já se inscreveu para esta materia.");
                         }else{
                            DOptativasInscrito.add(materiaOPT); 
-                           materiaOPT.inscreverAluno(this);
+                           materiaOPT.inscreverAluno(this.nome);
                         }
                     }
                 }
@@ -97,14 +97,14 @@ public class Alunx extends Pessoa implements Serializable {
             break;
             case 2:
                 materiaOBG = listarObrigatorias(obrigatorias);
-                if(DObrigatoriasInscrito.size() < 2){
-                    for (DisciplinaObrigatoria disciplinaObrigatoria : obrigatorias) {
+                if(DObrigatoriasInscrito.size() < 4){
+                    for (DisciplinaObrigatoria disciplinaObrigatoria : DObrigatoriasInscrito) {
                         if(disciplinaObrigatoria.equals(materiaOBG)){
                             System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                             System.out.println("Você já se inscreveu para esta materia.");
                         }else{
                            DObrigatoriasInscrito.add(materiaOBG);
-                           materiaOBG.inscreverAluno(this);
+                           materiaOBG.inscreverAluno(this.nome);
                         }
                     }
                 }
@@ -125,6 +125,7 @@ public class Alunx extends Pessoa implements Serializable {
         int index = 0;
         for (DisciplinaObrigatoria disciplinaObrigatoria : obrigatorias) {
             System.out.println(index + " - " + disciplinaObrigatoria.nome);
+            index++;
         }
         int opcao = scan.nextInt();
         return obrigatorias.get(opcao);
@@ -135,6 +136,7 @@ public class Alunx extends Pessoa implements Serializable {
         int index = 0;
         for (DisciplinaOptativa disciplinaOptativa : optativas) {
             System.out.println(index + " - " + disciplinaOptativa.nome);
+            index++;
         }
         int opcao = scan.nextInt();
         return optativas.get(opcao);
