@@ -1,6 +1,6 @@
 package com.grupo05.matriculas;
 
-public class Admin extends Pessoa{
+public class Admin extends Pessoa implements IFazerLogin{
     
     public Admin() {
         // TODO Auto-generated method stub
@@ -38,8 +38,19 @@ public class Admin extends Pessoa{
         return null;
     }
 
+    public Pessoa createCobranca(){
+        // TODO Auto-generated method stub
+        return null;
+    }
+
     public Disciplina createDisciplina(){
         // TODO Auto-generated method stub
         return null;
+    }
+
+    @Override
+    public boolean alterarSenha() {
+        // TODO Auto-generated method stub
+        return false;
     }
 }

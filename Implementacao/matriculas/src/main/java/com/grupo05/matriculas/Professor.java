@@ -3,7 +3,7 @@ package com.grupo05.matriculas;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Professor extends Pessoa {
+public class Professor extends Pessoa implements IFazerLogin{
     
     public List<Disciplina> disciplinas = new ArrayList<Disciplina>();
 
@@ -26,8 +26,15 @@ public class Professor extends Pessoa {
         // TODO Auto-generated method stub
         return false;
     }
+
+    @Override
+    public boolean alterarSenha() {
+        // TODO Auto-generated method stub
+        return false;
+    }
     
     public void selectAlunosByDisicplina(List<Disciplina> disciplinas){
         // TODO Auto-generated method stub
     }
+    
 }

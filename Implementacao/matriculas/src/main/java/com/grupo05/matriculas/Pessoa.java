@@ -16,8 +16,4 @@ public abstract class Pessoa {
 
     public abstract Pessoa clone();
 
-    public boolean fazerLogin(Object object2) { //equals
-        // TODO Auto-generated method stub
-        return false;
-    }
 }
