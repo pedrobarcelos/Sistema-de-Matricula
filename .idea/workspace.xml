@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1fb160fe-6bc8-4d6c-92f3-6b074d46b309" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Implementacao/TB_ALUNOS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/TB_CURSOS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/TB_DISCIPLINAS_OBRIGATORIAS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/TB_DISCIPLINAS_OPTATIVAS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/TB_PROFESSORES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/admin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/.project" beforeDir="false" afterPath="$PROJECT_DIR$/Implementacao/matriculas/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/Alunx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/Curso.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/Deserializador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/Disciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/Disciplina.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/DisciplinaObrigatoria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/DisciplinaOptativa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/FactoryAlunx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/FactoryDObrigatoria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/FactoryDOptativa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/FactoryDisciplina.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/FactoryPessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/FactoryProfessorx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/ICadastro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/IMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/Professorx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/main/java/com/grupo05/matriculas/Serializador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/src/test/java/com/grupo05/matriculas/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Implementacao/matriculas/src/test/java/com/grupo05/matriculas/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/Alunx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/Curso.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/Deserializador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/Disciplina.class" beforeDir="false" afterPath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/Disciplina.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/DisciplinaObrigatoria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/DisciplinaOptativa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/FactoryAlunx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/FactoryDObrigatoria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/FactoryDOptativa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/FactoryDisciplina.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/FactoryPessoa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/FactoryProfessorx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/ICadastro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/IMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/Pessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/Pessoa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/Professorx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/classes/com/grupo05/matriculas/Serializador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Implementacao/matriculas/target/test-classes/com/grupo05/matriculas/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Implementacao/matriculas/target/test-classes/com/grupo05/matriculas/AppTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="25tpMsxhDzxF0QDD1EIjEhkfEdE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1fb160fe-6bc8-4d6c-92f3-6b074d46b309" name="Default Changelist" comment="" />
+      <created>1646356191525</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646356191525</updated>
+    </task>
+    <servers />
+  </component>
+</project>

@@ -1,15 +1,26 @@
 package com.grupo05.matriculas;
 
-import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
-public abstract class Disciplina implements Serializable{
+public abstract class Disciplina {
 
-	private static final long serialVersionUID = 1L;
+    public int codigo;
     public String nome;
-    public ArrayList<Curso> cursos = new ArrayList<Curso>();
-    public int cargaHoraria;
-    public int periodo;
-    
+    public List<Pessoa> alunosInscritos = new ArrayList<Pessoa>();
 
+    public Disciplina() {
+        // TODO Auto-generated method stub
+    }
+
+    public Disciplina(Disciplina target) {
+        // TODO Auto-generated method stub
+    }
+
+    public abstract Disciplina clone();
+
+    public boolean fazerLogin(Object object2) {
+        // TODO Auto-generated method stub
+        return false;
+    }
 }

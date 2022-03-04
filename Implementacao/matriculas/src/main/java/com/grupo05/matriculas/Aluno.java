@@ -1,20 +1,25 @@
 package com.grupo05.matriculas;
 
-public class Admin extends Pessoa{
+import java.util.ArrayList;
+import java.util.List;
+
+public class Aluno extends Pessoa {
     
-    public Admin() {
+    public List<Disciplina> disciplinas = new ArrayList<Disciplina>();
+
+    public Aluno() {
         // TODO Auto-generated method stub
     }
 
-    public Admin(Admin target) {
+    public Aluno(Aluno target) {
         // TODO Auto-generated method stub
         super(target);
     }
 
     @Override
-    public Admin clone() {
+    public Aluno clone() {
         // TODO Auto-generated method stub
-        return new Admin(this);
+        return new Aluno(this);
     }
 
     @Override
@@ -23,23 +28,15 @@ public class Admin extends Pessoa{
         return false;
     }
 
-    public Pessoa createAluno(){
+    public void verDisicplinasAtivas(){
         // TODO Auto-generated method stub
-        return null;
     }
 
-    public Pessoa createProf(){
+    public void fazerMatricula(List<Disciplina> disciplinas){
         // TODO Auto-generated method stub
-        return null;
     }
 
-    public Pessoa createAdmin(){
+    public void inscreverEmDisciplina(List<Disciplina> disciplinas){
         // TODO Auto-generated method stub
-        return null;
-    }
-
-    public Disciplina createDisciplina(){
-        // TODO Auto-generated method stub
-        return null;
     }
 }
