@@ -7,11 +7,12 @@ public abstract class Pessoa {
     public String nome;
 
     public Pessoa() {
-        // TODO Auto-generated method stub
     }
 
     public Pessoa(Pessoa target) {
-        // TODO Auto-generated method stub
+        this.login = target.login;
+        this.senha = target.senha;
+        this.nome = target.nome;
     }
 
     public abstract Pessoa clone();
