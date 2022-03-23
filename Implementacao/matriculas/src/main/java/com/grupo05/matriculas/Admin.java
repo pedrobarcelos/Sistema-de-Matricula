@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class Admin extends Pessoa implements IFazerLogin, IMenu, ICadastroDisciplina, ICadastroPessoa, Serializable{
     
     private static final long serialVersionUID = 1L;
-    static Scanner scan = new Scanner(System.in);
+    public static Scanner scan = new Scanner(System.in);
 
     public String login;
     public String senha;
@@ -110,7 +110,7 @@ public class Admin extends Pessoa implements IFazerLogin, IMenu, ICadastroDiscip
     }
 
     public ArrayList<String> createObrigatoria(ArrayList<Obrigatoria> obrigatorias) throws InterruptedException{
-
+        Scanner scannew = new Scanner(System.in);
         ArrayList<String> codigos = new ArrayList<String>(obrigatorias.size());
         for(Obrigatoria o : obrigatorias){
             codigos.add(o.codigo);
@@ -122,7 +122,7 @@ public class Admin extends Pessoa implements IFazerLogin, IMenu, ICadastroDiscip
 
         while(nome == ""){
             System.out.println("Nome: ");
-            nome = scan.nextLine();
+            nome = scannew.nextLine();
             if(nome == ""){
                 System.out.println(CLEAR + " Nome inválido. Tente novamente.");
                 TimeUnit.SECONDS.sleep(3);
@@ -130,7 +130,7 @@ public class Admin extends Pessoa implements IFazerLogin, IMenu, ICadastroDiscip
         }
         while(codigo == "" || codigo.length() != 3){
             System.out.println("Código (3 dígitos): ");
-            nome = scan.nextLine();
+            codigo = scannew.nextLine();
             if(codigo == ""){
                 System.out.println(CLEAR + "O Código deve ter 3 digitos. Tente novamente.");
                 TimeUnit.SECONDS.sleep(3);
@@ -138,7 +138,7 @@ public class Admin extends Pessoa implements IFazerLogin, IMenu, ICadastroDiscip
         }
         while(cargaHoraria != "0"){
             System.out.println("Carga horária em horas: ");
-            nome = scan.nextLine();
+            cargaHoraria = scannew.nextLine();
             if(cargaHoraria == "" || cargaHoraria == "0"){
                 System.out.println(CLEAR + "A disciplina não pode ter carga zero. Tente novamente.");
                 TimeUnit.SECONDS.sleep(3);
@@ -154,6 +154,7 @@ public class Admin extends Pessoa implements IFazerLogin, IMenu, ICadastroDiscip
     }
 
     public ArrayList<String> createOptativa(ArrayList<Optativa> optativas) throws InterruptedException{
+        Scanner scanner = new Scanner(System.in);
         ArrayList<String> codigos = new ArrayList<String>(optativas.size());
         for(Optativa o : optativas){
             codigos.add(o.codigo);
@@ -165,7 +166,8 @@ public class Admin extends Pessoa implements IFazerLogin, IMenu, ICadastroDiscip
 
         while(nome == ""){
             System.out.println("Nome: ");
-            nome = scan.nextLine();
+            nome = scanner.nextLine();
+            TimeUnit.SECONDS.sleep(3);
             if(nome == ""){
                 System.out.println(CLEAR + " Nome inválido. Tente novamente.");
                 TimeUnit.SECONDS.sleep(3);
@@ -173,7 +175,7 @@ public class Admin extends Pessoa implements IFazerLogin, IMenu, ICadastroDiscip
         }
         while(codigo == "" || codigo.length() != 3){
             System.out.println("Código (3 dígitos): ");
-            nome = scan.nextLine();
+            codigo = scanner.nextLine();
             if(codigo == ""){
                 System.out.println(CLEAR + "O Código deve ter 3 digitos. Tente novamente.");
                 TimeUnit.SECONDS.sleep(3);
@@ -181,7 +183,7 @@ public class Admin extends Pessoa implements IFazerLogin, IMenu, ICadastroDiscip
         }
         while(cargaHoraria != "0"){
             System.out.println("Carga horária em horas: ");
-            nome = scan.nextLine();
+            cargaHoraria = scanner.nextLine();
             if(cargaHoraria == "" || cargaHoraria == "0"){
                 System.out.println(CLEAR + "A disciplina não pode ter carga zero. Tente novamente.");
                 TimeUnit.SECONDS.sleep(3);
@@ -236,7 +238,6 @@ public class Admin extends Pessoa implements IFazerLogin, IMenu, ICadastroDiscip
         cadastro.add(nomes);
 
         while(login == ""){
-            System.out.println(CLEAR +"Login: ");
             login = scanEXTRA.nextLine();
             if(login == "" || login.length() != 6){
                 System.out.println("O login deve ter obrigatóriamente 6 caracteres. Tente novamente");

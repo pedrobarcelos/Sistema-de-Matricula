@@ -433,7 +433,7 @@ public class App {
 
         System.out.println(CLEAR
                 + "                                                                    OBJETOS PERSISTENTES          \n\n\n\n\n\n\n\n\n\n\n\n\nVocê terá 5 segundos para analisar cada sessão");
-        TimeUnit.SECONDS.sleep(5);
+        TimeUnit.SECONDS.sleep(3);
 
         try {
 
@@ -482,7 +482,7 @@ public class App {
                 System.out.println("------------------------------------------------------------------------------");
             }
 
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(3);
             System.out.println(CLEAR + "-------------------------------OFERTAS----------------------------------------");
             System.out.println("Modelo: tipo,nome;");
             System.out.println("------------------------------------------------------------------------------");
